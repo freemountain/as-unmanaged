@@ -1,0 +1,20 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": ["npm run clean", "npm install", "npm run asbuild:debug"],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "install": {
+      "name": "Install deps",
+      "command": "npm install"
+    },
+    "build": {
+      "name": "debug build",
+      "command": "npm run asbuild:debug"
+    },
+    "clean": {
+      "name": "clean",
+      "command": "npm run clean"
+    }
+  }
+}
